@@ -173,6 +173,12 @@ variable "bootstrap_self_managed_addons" {
   default     = null
 }
 
+variable "cluster_storage_config" {
+  description = "Optional map to override auto mode behaviour for storage_config"
+  type = any
+  default = {}
+}
+
 ################################################################################
 # Access Entry
 ################################################################################
